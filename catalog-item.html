@@ -20,8 +20,41 @@
         </ul>
       </nav>
 
-      <!--Декоративное изображение-->
-      <a href="">Вход</a>
+      <section>
+        <h2 hidden>Авторизация</h2>
+        
+        <a href="">Вход</a>
+
+        <!--popup-->
+        <article>
+          <h3>Личный кабинет</h3>
+  
+          <p>Введите пожалуйста свой логин и пароль</p>
+
+          <form action="#" method="post">
+            <ul>
+              <li>
+                <label for="user_login" class="visually-hidden">Логин</label>
+                <input id="user_login" name="login" type="text" placeholder="Логин">
+              </li>
+              <li>
+                <label for="user_password" class="visually-hidden">Пароль</label>
+                <input id="user_password" name="password" type="password" placeholder="Пароль">
+              </li>
+            </ul>
+  
+            <input id="user_remember" name="remember" type="checkbox">
+            <label for="user_remember">Запомните меня</label>
+  
+            <a href="">Я забыл пароль</a>
+            <br>
+            <button type="submit">Войти</button>
+  
+            <button type="button">Закрыть</button>
+          </form>
+        </article>
+        <!--popup-->
+      </section>
     </header>
 
     <main>
@@ -32,11 +65,8 @@
 
         <ul>
           <li><a href="index.html">Главная</a></li>
-          <!--Сделать декоративное изображение с помощью ручного SVG или CSS-->
           <li><a href="catalog.html">Магазин</a></li>
-          <!--Сделать декоративное изображение с помощью ручного SVG или CSS-->
           <li><a href="">Средства для ухода</a></li>
-          <!--Сделать декоративное изображение с помощью ручного SVG или CSS-->
           <li><a>Набор для путешествий «Baxter of California»</a></li>
         </ul>
       </div>
@@ -88,30 +118,44 @@
     <footer>
       <section>
         <h2 class="visually-hidden">Контактная информация</h2>
+
         <p>
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
-          <a href="">Как нас найти?</a><br>
-          Телефон: +7 (495) 666-02-66
+          Барбершоп «Бородинский»
+          <br>
+          Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8
         </p>
+
+        <a href="">Как нас найти?</a>
+
+        <!--popup-->
+        <article>
+          <h3 hidden>Карта</h3>
+          <img src="img/popup-map.png" width="766" height="560" alt="Карта, на которой показано расположение барабершопа Бородинский">
+
+          <button type="button">Закрыть</button>
+        </article>
+        <!--popup-->
+
+        <p>Телефон: +7 (495) 666-02-66</p>
       </section>
 
       <section>
-        <h2 hidden>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
+
         <p>Давайте дружить!</p>
+
         <ul>
-          <!--Декоративное изображение-->
-          <li><a href="">Вконтакте</a></li>
-          <!--Декоративное изображение-->
-          <li><a href="">Фейсбук</a></li>
-          <!--Декоративное изображение-->
-          <li><a href="">Инстаграм</a></li>
+          <li><a href="" aria-label="Вконтакте"></a></li>
+          <li><a href="" aria-label="Фейсбук"></a></li>
+          <li><a href="" aria-label="Инстаграм"></a></li>
         </ul>
       </section>
 
       <section>
-        <h2 hidden>Разработчик</h2>
+        <h2 class="visually-hidden">Разработчик</h2>
+
         <p>Разработано:</p>
+
         <a href="https://htmlacademy.ru">HTML ACADEMY</a>
       </section>
     </footer>
