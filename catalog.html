@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог барбершопа Бородинский</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&display=swap&subset=cyrillic,cyrillic-ext">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
+  <body class="inner-page">
+    <header class="inner-header">
       <nav>
         <a href="index.html">
           <img src="img/inside-logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
 
-        <ul>
+        <ul class="inner-navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Прайс-лист</a></li>
@@ -23,54 +26,24 @@
       <section>
         <h2 hidden>Авторизация</h2>
         
-        <a href="">Вход</a>
-
-        <!--popup-->
-        <article>
-          <h3>Личный кабинет</h3>
-  
-          <p>Введите пожалуйста свой логин и пароль</p>
-
-          <form action="#" method="post">
-            <ul>
-              <li>
-                <label for="user_login" class="visually-hidden">Логин</label>
-                <input id="user_login" name="login" type="text" placeholder="Логин">
-              </li>
-              <li>
-                <label for="user_password" class="visually-hidden">Пароль</label>
-                <input id="user_password" name="password" type="password" placeholder="Пароль">
-              </li>
-            </ul>
-  
-            <input id="user_remember" name="remember" type="checkbox">
-            <label for="user_remember">Запомните меня</label>
-  
-            <a href="">Я забыл пароль</a>
-            <br>
-            <button type="submit">Войти</button>
-  
-            <button type="button">Закрыть</button>
-          </form>
-        </article>
-        <!--popup-->
+        <a href="" class="enter">Вход</a>
       </section>
     </header>
 
     <main>
-      <h1>Средства для ухода</h1>
-
-      <div>
-        <h2 class="visually-hidden">Хлебные крошки</h2>
-
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a>Средства для ухода</a></li>
-        </ul>
-      </div>
+      <h1 class="page-tittle">Средства для ухода</h1>
 
       <section>
+        <h2 class="visually-hidden">Хлебные крошки</h2>
+
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li class="breadcrumbs-current"><a>Средства для ухода</a></li>
+        </ul>
+      </section>
+
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 
         <form action="#" method="get">
@@ -114,7 +87,7 @@
                 <label for="groups_of_goods-item-1">Бритвенные принадлежности</label>
               </li>
               <li>
-                <input id="groups_of_goods-item-2" name="group_of_goods" type="radio" value="Средства для ухода">
+                <input id="groups_of_goods-item-2" name="group_of_goods" type="radio" value="Средства для ухода" checked>
                 <label for="groups_of_goods-item-2">Средства для ухода</label>
               </li>
               <li>
@@ -124,120 +97,108 @@
             </ul>
           </fieldset>
 
-          <button type="submit">Показать</button>
+          <button type="submit" class="btn">Показать</button>
         </form>
       </section>
 
       <section>
         <h2 class="visually-hidden">Список средств для ухода</h2>
 
-        <ul>
+        <ul class="catalog-list">
           <li>
             <a href="catalog-item.html">
               <h3>
-                <span>
-                  Набор для путешествий
+                  <span>Набор для путешествий</span>
                   <br>
                   «Baxter of California»
-                </span>
               </h3>
               <figure>
                 <img src="img/catalog-item-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
               </figure>
             </a>
             <p>
-              2900 ₽ 
-              <a href="">Купить</a>
+              <span class="catalog-item__price">2900 ₽</span>
+              <a href="" class="link-btn">Купить</a>
             </p>
           </li>
           <li>
             <a href="catalog-item.html">
               <h3>
-                <span>
-                  Увлажняющий кондиционер
+                  <span class="catalog-item__title">Увлажняющий кондиционер</span>
                   <br>
                   «Baxter of California»
-                </span>
               </h3>
               <figure>
                 <img src="img/catalog-item-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
               </figure>
             </a>
             <p>
-              750 ₽ 
-              <a href="">Купить</a>
+              <span class="catalog-item__price">750 ₽</span>
+              <a href="" class="link-btn">Купить</a>
             </p>
           </li>
           <li>
             <a href="catalog-item.html">
               <h3>
-                <span>
-                  Гель для волос
+                  <span class="catalog-item__title">Гель для волос</span>
                   <br>
                   «SUAVECITO»
-                </span>
               </h3>
               <figure>
                 <img src="img/catalog-item-3.jpg" width="220" height="165" alt="Гель для волос «SUAVECITO»">
               </figure>
             </a>
             <p>
-              290 ₽ 
-              <a href="">Купить</a>
+              <span class="catalog-item__price">290 ₽</span>
+              <a href="" class="link-btn">Купить</a>
             </p>
           </li>
           <li>
             <a href="catalog-item.html">
               <h3>
-                <span>
-                  Глина для укладки волос
+                  <span class="catalog-item__title">Глина для укладки волос</span>
                   <br>
                   «American crew»
-                </span>
               </h3>
               <figure>
                 <img src="img/catalog-item-4.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
               </figure>
             </a>
             <p>
-              500 ₽ 
-              <a href="">Купить</a>
+              <span class="catalog-item__price">500 ₽</span>
+              <a href="" class="link-btn">Купить</a>
             </p>
           </li>
           <li>
             <a href="catalog-item.html">
               <h3>
-                <span>
-                  Гель для волос
+                  <span class="catalog-item__title">Гель для волос</span>
                   <br>
                   «AMERICAN CREW»
-                </span>
               </h3>
               <figure>
                 <img src="img/catalog-item-5.jpg" width="220" height="165" alt="Гель для волос «AMERICAN CREW»">
               </figure>
             </a>
             <p>
-              300 ₽ 
-              <a href="">Купить</a>
+              <span class="catalog-item__price">300 ₽</span> 
+              <a href="" class="link-btn">Купить</a>
             </p>
           </li>
           <li>
             <a href="catalog-item.html">
               <h3>
-                <span>
-                  Набор для бритья
+                  <span class="catalog-item__title">Набор для бритья</span>
                   <br>
                   «Baxter of California»
-                </span>
               </h3>
               <figure>
                 <img src="img/catalog-item-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
               </figure>
             </a>
             <p>
-              3900 ₽ 
-              <a href="">Купить</a>
+              <span class="catalog-item__price">3900 ₽</span>
+              <a href="" class="link-btn">Купить</a>
             </p>
           </li>
         </ul>
@@ -246,16 +207,16 @@
       <div>
         <h2 class="visually-hidden">Меню выбора страницы</h2>
 
-        <ul>
+        <ul class="pagination">
           <li><a href="">1</a></li>
-          <li><a href="">2</a></li>
+          <li class="pagination-current"><a href="">2</a></li>
           <li><a href="">3</a></li>
           <li><a href="">4</a></li>
         </ul>
       </div>
     </main>
 
-    <footer>
+    <footer class="inner-footer">
       <section>
         <h2 class="visually-hidden">Контактная информация</h2>
 
@@ -267,15 +228,6 @@
 
         <a href="">Как нас найти?</a>
 
-        <!--popup-->
-        <article>
-          <h3 hidden>Карта</h3>
-          <img src="img/popup-map.png" width="766" height="560" alt="Карта, на которой показано расположение барабершопа Бородинский">
-
-          <button type="button">Закрыть</button>
-        </article>
-        <!--popup-->
-
         <p>Телефон: +7 (495) 666-02-66</p>
       </section>
 
@@ -284,20 +236,62 @@
 
         <p>Давайте дружить!</p>
 
-        <ul>
+        <ul class="socials">
           <li><a href="" aria-label="Вконтакте"></a></li>
           <li><a href="" aria-label="Фейсбук"></a></li>
           <li><a href="" aria-label="Инстаграм"></a></li>
         </ul>
       </section>
 
-      <section>
+      <section class="developer">
         <h2 class="visually-hidden">Разработчик</h2>
 
         <p>Разработано:</p>
 
-        <a href="https://htmlacademy.ru">HTML ACADEMY</a>
+        <a href="https://htmlacademy.ru" class="link-btn">HTML ACADEMY</a>
       </section>
     </footer>
+
+    <!--popup-->
+    <article class="modal-authorization">
+      <h3>Личный кабинет</h3>
+
+      <p>Введите пожалуйста свой логин и пароль</p>
+
+      <form action="#" method="post">
+        <ul>
+          <li>
+            <label for="user_login" class="visually-hidden">Логин</label>
+            <input id="user_login" name="login" type="text" placeholder="Логин">
+          </li>
+          <li>
+            <label for="user_password" class="visually-hidden">Пароль</label>
+            <input id="user_password" name="password" type="password" placeholder="Пароль">
+          </li>
+        </ul>
+
+        <input id="user_remember" name="remember" type="checkbox">
+        <label for="user_remember">Запомните меня</label>
+
+        <a href="">Я забыл пароль</a>
+        <br>
+        <button type="submit">Войти</button>
+
+        <button type="button">Закрыть</button>
+      </form>
+    </article>
+    <!--popup-->
+
+    <!--popup-->
+      <article class="modal-map">
+        <h3 hidden>Карта</h3>
+
+        <figure>
+          <img src="img/popup-map.png" width="766" height="560" alt="Карта, на которой показано расположение барабершопа Бородинский">
+        </figure>
+
+        <button type="button">Закрыть</button>
+      </article>
+    <!--popup-->
   </body>
 </html>

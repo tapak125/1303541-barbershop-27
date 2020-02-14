@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп Бородинский</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&display=swap&subset=cyrillic,cyrillic-ext">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav>
-        <ul>
+        <ul class="main-navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Прайс-лист</a></li>
@@ -19,39 +22,8 @@
       <section>
         <h2 hidden>Авторизация</h2>
         
-        <a href="">Вход</a>
-
-        <!--popup-->
-        <article>
-          <h3>Личный кабинет</h3>
-  
-          <p>Введите пожалуйста свой логин и пароль</p>
-
-          <form action="#" method="post">
-            <ul>
-              <li>
-                <label for="user_login" class="visually-hidden">Логин</label>
-                <input id="user_login" name="login" type="text" placeholder="Логин">
-              </li>
-              <li>
-                <label for="user_password" class="visually-hidden">Пароль</label>
-                <input id="user_password" name="password" type="password" placeholder="Пароль">
-              </li>
-            </ul>
-  
-            <input id="user_remember" name="remember" type="checkbox">
-            <label for="user_remember">Запомните меня</label>
-  
-            <a href="">Я забыл пароль</a>
-            <br>
-            <button type="submit">Войти</button>
-  
-            <button type="button">Закрыть</button>
-          </form>
-        </article>
-        <!--popup-->
+        <a href="" class="enter">Вход</a>    
       </section>
- 
     </header>
 
     <main>
@@ -64,7 +36,7 @@
       <section>
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <ul>
+        <ul class="advantages">
           <li>
             <h3>Быстро</h3>
             <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
@@ -84,88 +56,98 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Новости</h2>
+      <div class="index-columns">
+        <section>
+          <h2>Новости</h2>
 
-        <ul>
-          <li>
-            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-            <time datetime="2020-01-11">11 января</time>
-          </li>
-          <li>
-            <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2020-01-18"></time>
-          </li>
-        </ul>
-
-        <a href="">Все новости</a>
-      </section>
-
-      <section>
-        <h2>Фотогалерея</h2>
-
-        <figure>
-          <a href="">
-            <img src="img/index-gallery_item-1.jpg" width="286" height="164" alt="Интерьер барбершопа">
-          </a>
-        </figure>
-
-        <button type="button">Назад</button>
-
-        <button type="button">Вперед</button>
-      </section>
-
-      <section>
-        <h2>Контактная информация</h2>
-
-        <p>
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
-          Телефон: +7 (495) 666-02-66<br>
-        </p>
-
-        <p>
-          Время работы:<br> 
-          ПН—ПТ: С 10:00 ДО 22:00<br>
-          СБ—ВС: С 10:00 ДО 19:00<br>
-        </p>
-
-        <a href="">Как проехать</a>
-
-        <a href="">Обратная связь</a>
-      </section>
-
-      <section>
-        <h2>Записаться</h2>
-
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-
-        <form action="#" method="post">
           <ul>
             <li>
-              <label for="apointment_date">Дата</label>
-              <input id="apointment_date" name="date" type="date" value="2017-10-08" required>
+              <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime="2020-01-11">11 января</time>
             </li>
             <li>
-              <label for="apointment_time">Время</label>
-              <input id="apointment_time" name="time" type="time" value="10:00" required>
-            </li>
-            <li>
-              <label for="apointment_name">Ваше имя</label>
-              <input id="apointment_name" name="name" type="text" value="" placeholder="Борода" required>
-            </li>
-            <li>
-              <label for="apointment_tel">Телефон</label>
-              <input id="apointment_tel" name="tel" type="tel" value="" placeholder="+7 123 456-78-90" required>
+              <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime="2020-01-18">18 января</time>
             </li>
           </ul>
 
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
+          <a href="" class="link-btn">Все новости</a>
+        </section>
+
+        <section>
+          <h2>Фотогалерея</h2>
+
+          <figure class="gallery">
+            <a href="">
+              <img src="img/index-gallery_item-1.jpg" width="286" height="164" alt="Интерьер барбершопа">
+            </a>
+          </figure>
+
+          <button type="button" class="btn">Назад</button>
+
+          <button type="button" class="btn">Вперед</button>
+        </section>
+      </div>
+
+      <div class="index-columns">
+        <section>
+          <h2>Контактная информация</h2>
+
+          <p>
+            Барбершоп «Бородинский»
+            <br>
+            Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8
+            <br>
+            Телефон: +7 (495) 666-02-66
+            <br>
+          </p>
+
+          <p>
+            Время работы:
+            <br> 
+            ПН—ПТ: С 10:00 ДО 22:00
+            <br>
+            СБ—ВС: С 10:00 ДО 19:00
+            <br>
+          </p>
+
+          <a href="" class="link-btn">Как проехать</a>
+
+          <a href="" class="link-btn">Обратная связь</a>
+        </section>
+
+        <section>
+          <h2>Записаться</h2>
+
+          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+
+          <form action="#" method="post" class="apointment-form">
+            <ul>
+              <li>
+                <label for="apointment_date">Дата</label>
+                <input id="apointment_date" name="date" type="date"  value="" placeholder="2017-10-08" required class="entry-field">
+              </li>
+              <li>
+                <label for="apointment_time">Время</label>
+                <input id="apointment_time" name="time" type="time"  value="" placeholder="10:00" required class="entry-field">
+              </li>
+              <li>
+                <label for="apointment_name">Ваше имя</label>
+                <input id="apointment_name" name="name" type="text" value="" placeholder="Борода" required class="entry-field">
+              </li>
+              <li>
+                <label for="apointment_tel">Телефон</label>
+                <input id="apointment_tel" name="tel" type="tel" value="" placeholder="+7 123 456-78-90" required class="entry-field">
+              </li>
+            </ul>
+
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <section>
         <h2 class="visually-hidden">Контактная информация</h2>
 
@@ -177,15 +159,6 @@
 
         <a href="">Как нас найти?</a>
 
-        <!--popup-->
-        <article>
-          <h3 hidden>Карта</h3>
-          <img src="img/popup-map.png" width="766" height="560" alt="Карта, на которой показано расположение барабершопа Бородинский">
-
-          <button type="button">Закрыть</button>
-        </article>
-        <!--popup-->
-
         <p>Телефон: +7 (495) 666-02-66</p>
       </section>
 
@@ -194,18 +167,60 @@
 
         <p>Давайте дружить!</p>
 
-        <ul>
+        <ul class="socials">
           <li><a href="" aria-label="Вконтакте"></a></li>
           <li><a href="" aria-label="Фейсбук"></a></li>
           <li><a href="" aria-label="Инстаграм"></a></li>
         </ul>
       </section>
 
-      <section>
+      <section class="developer">
         <h2 class="visually-hidden">Разработчик</h2>
         <p>Разработано:</p>
-        <a href="https://htmlacademy.ru">HTML ACADEMY</a>
+        <a href="https://htmlacademy.ru" class="link-btn">HTML ACADEMY</a>
       </section>
     </footer>
+
+     <!--popup-->
+     <article class="modal-authorization">
+      <h3>Личный кабинет</h3>
+
+      <p>Введите пожалуйста свой логин и пароль</p>
+
+      <form action="#" method="post">
+        <ul>
+          <li>
+            <label for="user_login" class="visually-hidden">Логин</label>
+            <input id="user_login" name="login" type="text" value="Логин">
+          </li>
+          <li>
+            <label for="user_password" class="visually-hidden">Пароль</label>
+            <input id="user_password" name="password" type="password" value="Пароль">
+          </li>
+        </ul>
+
+        <input id="user_remember" name="remember" type="checkbox">
+        <label for="user_remember">Запомните меня</label>
+
+        <a href="">Я забыл пароль</a>
+        <br>
+        <button type="submit" class="btn">Войти</button>
+
+        <button type="button">Закрыть</button>
+      </form>
+    </article>
+    <!--popup-->
+
+    <!--popup-->
+    <article class="modal-map">
+      <h3 hidden>Карта</h3>
+
+      <figure>
+        <img src="img/popup-map.png" width="766" height="560" alt="Карта, на которой показано расположение барабершопа Бородинский">
+      </figure>
+
+      <button type="button">Закрыть</button>
+    </article>
+    <!--popup-->
   </body>
 </html>

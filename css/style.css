@@ -1,0 +1,308 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans Narrow" , "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+
+  background-color: #000000;
+  background-image: url("../files/index-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("../files/inner-background.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.advantages, 
+.socials, 
+.index-columns ul,
+.modal-authorization ul,
+.breadcrumbs,
+.filter ul,
+.catalog-list,
+.pagination {
+  list-style: none
+}
+
+.main-header a,
+.inner-header a {
+  color: #ffffff;
+}
+
+.main-footer a,
+.inner-footer a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:active,
+.inner-navigation a:hover,
+.inner-navigation a:active,
+.enter:hover,
+.enter:active {
+  background-color: #333333;
+}
+
+.modal-authorization a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.main-header,
+.inner-header {
+  background-image: url("../files/header-background.jpg");
+}
+
+.main-footer,
+.inner-footer {
+  background-color: #333333;
+  background-image: url("../files/footer-background.jpg");
+}
+
+.inner-footer {
+  color: #ffffff;
+}
+
+.modal-authorization {
+  background-color: #ffffff;
+  background-image: url("../files/popup-authorization.png");
+}
+
+.modal-authorization h3 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.modal-authorization input {
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000101;
+
+  background-color: transparent;
+  border: solid 2px #000101;
+}
+
+.modal-authorization input:focus {
+  border-color: #663300;
+}
+
+.modal-authorization input[type="checkbox"]+label:hover,
+.filter input[type="checkbox"]+label:hover,
+.filter input[type="radio"]+label:hover {
+  color: #663300;
+}
+
+.modal-authorization input[type="checkbox"]:disabled+label,
+.filter input[type="checkbox"]:disabled+label,
+.filter input[type="radio"]:disabled+label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.modal-authorization p, 
+.modal-authorization label {
+  color: #000000;
+}
+
+.modal-map figure {
+  background-color: #999999;
+  border: solid 5px #ffffff;
+}
+
+.link-btn, 
+.btn,
+.socials li {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #000000;
+  border: none;
+}
+
+.link-btn:hover,
+.link-btn:active,
+.btn:hover,
+.btn:active,
+.pagination a:hover,
+.pagination a:active {
+  background-color: #663300;
+}
+
+.socials li:hover,
+.socials li:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.developer .link-btn:hover,
+.developer .link-btn:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-navigation {
+  list-style: none;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.enter {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.advantages h3 {
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.advantages p {
+  text-align: center;
+}
+
+.index-columns {
+  background-color: #ffffff;
+  background-image: url("../files/index-background-section.jpg");
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.index-columns p, 
+.index-columns label {
+  color: #000000;
+}
+
+.index-columns time {
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.gallery {
+  background-color: #cccccc;
+  border: solid 5px #ffffff;
+}
+
+.apointment-form input{
+  line-height: 24px;
+  text-align: left;
+  text-transform: capitalize;
+  color: rgba(0,0,0,0.7);
+
+  background-color: transparent;
+  border: solid 2px #000101;
+}
+
+.apointment-form input:focus {
+  border-color: #663300;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  color: #000000;
+}
+
+.breadcrumbs-current a{
+  color: #aba9a7;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  line-height: 18px;
+}
+
+.catalog-list h3 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.catalog-list li {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-list li:hover {
+  box-shadow: 3.2px 3.8px 25px 0 rgba(0, 1, 1, 0.3);
+}
+
+.catalog-item__title {
+  text-transform: none;
+}
+
+.catalog-item__price {
+  text-align:center;
+
+  background-color: #cccccc;
+}
+
+.pagination a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.pagination-current a,
+.pagination-current a:hover,
+.pagination-current a:focus,
+.pagination-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
