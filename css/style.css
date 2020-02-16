@@ -45,7 +45,9 @@ a {
 .breadcrumbs,
 .filter ul,
 .catalog-list,
-.pagination {
+.pagination,
+.gallery-item-small,
+.good-description ul {
   list-style: none
 }
 
@@ -76,6 +78,7 @@ a {
 
 .main-header,
 .inner-header {
+  background-color: #000000;
   background-image: url("../files/header-background.jpg");
 }
 
@@ -252,7 +255,8 @@ a {
   color: #aba9a7;
 }
 
-.filter legend {
+.filter legend,
+.good-description h3 {
   font-size: 24px;
   line-height: 30px;
 }
@@ -305,4 +309,17 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.gallery-item-big img{
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.gallery-item-small img {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.good-id {
+  text-align: right;
+  color: #aeaeae;
 }
